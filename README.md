@@ -53,21 +53,5 @@ Additional queries or tables:
 
 The amended code is below for the new table:
 
--- creating amended mentorship eligibility
-Select Distinct On (e.emp_no) e.emp_no, 
-       e.first_name,
-       e.last_name,
-       e.birth_date,
-       d.from_date,
-       d.to_date,
-       t.title
-into eligibility_amended       
-From employees as e
-inner join dept_emp as d
-on e.emp_no = d.emp_no
-inner join titles as t
-on e.emp_no = t.emp_no 
-Where d.to_date ='9999-01-01' And
-e.birth_date Between '1961-01-01' And '1972-12-31'
-Order by emp_no
+![new_code](https://user-images.githubusercontent.com/100378319/163608037-c4736f97-cbac-4d4d-ab36-4828aa4b2913.png)
 
