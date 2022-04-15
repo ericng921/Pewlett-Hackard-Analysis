@@ -49,9 +49,10 @@ Additional queries or tables:
 
 2. I have amended the table for mentorship_eligibility to have birth_date between 1961 to 1972 which is 50 to 61 years old. There are 75319 roles in this area so there are enough qualified employees in department to mentor the next generation. Even though they are not retirement-ready employees however we can decide who is eligible for the program based on their knowledge and senority after obtaining this list. Considering company’s budget so we try not over exceeding qualified mentorship employees with silver tsunmi.
 
-![eligibility_amended_count](https://user-images.githubusercontent.com/100378319/163607715-22fcccf7-2e44-4650-b336-930ea7e42212.png)
-
 The amended code is below for the new table:
 
 ![new_code](https://user-images.githubusercontent.com/100378319/163608037-c4736f97-cbac-4d4d-ab36-4828aa4b2913.png)
 
+Output:
+
+![eligibility_amended_count](https://user-images.githubusercontent.com/100378319/163607715-22fcccf7-2e44-4650-b336-930ea7e42212.png)
