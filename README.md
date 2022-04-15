@@ -14,10 +14,17 @@ First, we used Join function to combined titles and employees’ tables to get t
 There are four major points from the two analyses:
 
 - There are only 2 individual with manager title had the least amount for retiring employee
+- 
+![retiring_titles](https://user-images.githubusercontent.com/100378319/163607633-9718ab5a-28f2-40d0-b646-2a57c90bcbe9.png)
 
 - There are 72458 employees who is retiring with birth_date between 1952-01-01 to 1955-01-01. However they are not all in senior role, some of them are only Staff and Engineer title.
 
+![sum_of_retiring_titles](https://user-images.githubusercontent.com/100378319/163607686-83decedb-4b8e-453e-819c-fa0e5957ebd9.png)
+
 - There are only 1549 from mentorship eligibility table whose is retirement-ready employees. 
+
+![original_mentorship_eligilibility](https://user-images.githubusercontent.com/100378319/163607691-62309741-644e-4ccb-966b-2567f59ce915.png)
+
 
 - We need to update info for Titles table because it is out-of-date. 
 
@@ -41,7 +48,10 @@ Additional queries or tables:
 1. The first table, retirement_titles, quires can be amended for a earlier birth_date because the some employees may retire earlier in 60 to 65 vs current 67 to 70 years old. It may generate a higher number of "silver tsunmi" employees and we will affect our result for mentorship_eligibility.
 
 2. I have amended the table for mentorship_eligibility to have birth_date between 1961 to 1972 which is 50 to 61 years old. There are 75319 roles in this area so there are enough qualified employees in department to mentor the next generation. Even though they are not retirement-ready employees however we can decide who is eligible for the program based on their knowledge and senority after obtaining this list. Considering company’s budget so we try not over exceeding qualified mentorship employees with silver tsunmi.
-The code is below for the new table:
+
+![eligibility_amended_count](https://user-images.githubusercontent.com/100378319/163607715-22fcccf7-2e44-4650-b336-930ea7e42212.png)
+
+The amended code is below for the new table:
 
 -- creating amended mentorship eligibility
 Select Distinct On (e.emp_no) e.emp_no, 
