@@ -13,23 +13,23 @@ First, we used Join function to combined titles and employees’ tables to get t
 
 There are four major points from the two analyses:
 
-- There are only 2 individual with manager title had the least amount for retiring employee
+- There are only 2 individual with manager title had the least amount for retiring employee.
 
 ![retiring_titles](https://user-images.githubusercontent.com/100378319/163607633-9718ab5a-28f2-40d0-b646-2a57c90bcbe9.png)
 
 
-- There are 72458 employees who is retiring with birth_date between 1952-01-01 to 1955-01-01. However they are not all in senior role, some of them are only Staff and Engineer title
+- There are 72458 employees who is retiring with birth_date between 1952-01-01 to 1955-01-01. However they are not all in senior role, some of them are only Staff and Engineer title.
 
 ![sum_of_retiring_titles](https://user-images.githubusercontent.com/100378319/163607686-83decedb-4b8e-453e-819c-fa0e5957ebd9.png)
 
 
-- There are only 1549 from mentorship eligibility table whose is retirement-ready employees
+- There are only 1549 from mentorship eligibility table whose is retirement-ready employees.
 
 ![original_mentorship_eligilibility](https://user-images.githubusercontent.com/100378319/163607691-62309741-644e-4ccb-966b-2567f59ce915.png)
 
 
-- We need to update info for Titles table because it is out-of-date. 
-For example, for the mentorship_eligibility table even there are emp_no, from_date, and to_date in title, we still cannot use only these two tables (employees + titles) for the inner join because the from_date is not up-to-date in titles table. We need to use the most updated from_date from dept_emp table to have the correct result, therefore we used 3 tables.
+- Data in Titles table is needed to updated.
+For example, for the mentorship_eligibility table even there are emp_no, from_date, and to_date in title, we still cannot use only these two tables (employees + titles) for the inner join because the from_date is not up-to-date in titles table. We need to use the most updated from_date from dept_emp table to have the correct result, therefore we used 3 tables for the join.
 
 # Summary
 
