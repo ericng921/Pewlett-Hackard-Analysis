@@ -19,12 +19,12 @@ There are four major points from the two analyses:
 
 
 - There are 72458 employees who is retiring with birth_date between 1952-01-01 to 1955-01-01. However they are not all in senior role, some of them are only Staff and Engineer title
-- 
+
 ![sum_of_retiring_titles](https://user-images.githubusercontent.com/100378319/163607686-83decedb-4b8e-453e-819c-fa0e5957ebd9.png)
 
 
 - There are only 1549 from mentorship eligibility table whose is retirement-ready employees
-- 
+
 ![original_mentorship_eligilibility](https://user-images.githubusercontent.com/100378319/163607691-62309741-644e-4ccb-966b-2567f59ce915.png)
 
 
@@ -37,12 +37,9 @@ For example, for the mentorship_eligibility table even there are emp_no, from_da
 
 There are 72458 roles need to be filled. The result is from the total of unique_titles which contains the employees whose birthday is between 1922-01-01 and 1955-12-31 and currently working now. 
 
-
 - Are there enough qualified, retirement-ready employees in the departments to mentor the next generation of Pewlett Hackard employees?
 
 There are only 1549 from mentorship eligibility table whose is retirement-ready employees. Even not all of the 72458 are manger or senior position but 1549 is still not enough to mentor the next generation of Pewlett Hackard employees
-
-
 
 Additional queries or tables:
 
